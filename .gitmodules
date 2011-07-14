@@ -1,0 +1,3 @@
+[submodule "lib/process-input"]
+	path = lib/process-input
+	url = git://gist.github.com/1083108.git
