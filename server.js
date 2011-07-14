@@ -1,5 +1,6 @@
 var FS = require('fs');
 var HTTP = require('http');
+var HTTPS = require('https');
 var URL = require('url');
 
 /** @type {Object} */
