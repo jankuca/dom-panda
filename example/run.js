@@ -8,6 +8,7 @@ window.addEventListener('load', function () {
 		}, this);
 	};
 	walker.onend = function () {
+		console.timeEnd('rendering');
 		renderer.getImage().then(function (img) {
 			img.style.position = 'absolute';
 			img.style.top = '0';
@@ -45,5 +46,6 @@ window.addEventListener('load', function () {
 		});
 	};
 	walker.walk();
+	console.time('rendering');
 
 }, false);
