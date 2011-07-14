@@ -4,3 +4,8 @@
     cd dom-panda
     git submodule update --init
     node server.js -p 1100
+
+## Run ##
+
+    http://localhost:1100/example/kittens.html
+    http://localhost:1100/example/lastfm.html
