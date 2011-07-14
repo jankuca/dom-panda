@@ -18,10 +18,10 @@ var panda = {};
  * @constructor
  */
 panda.Walker = function (root) {
-		this.root = root || this.getRootElement();
-		this.index = -1;
-		this.items = Array.prototype.slice.call(this.root.childNodes);
-		this.sub = null;
+	this.root = root || this.getRootElement();
+	this.index = -1;
+	this.items = Array.prototype.slice.call(this.root.childNodes);
+	this.sub = null;
 };
 
 /**
@@ -639,8 +639,6 @@ panda.Renderer.prototype.clipElementWithParentOverflow = function (node, canvas)
 		var clip_right = node_rect.right - clip_rect.right + right;
 		var clip_bottom = node_rect.bottom - clip_rect.bottom + bottom;
 
-		/*if (node.tagName === 'IMG') {
-			console.log('clipping', node, 'with', clip_top, clip_bottom, clip_left, clip_right);*/
 		ctx.globalCompositeOperation = 'destination-out';
 		ctx.fillStyle = 'black';
 		// TODO: take overflow parent border radius into account
