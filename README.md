@@ -1,3 +1,14 @@
+# DOM Panda
+
+Client-side JavaScript Rendering Engine based on Canvas and DOM.
+
+## Demo
+
+These are two demo pages. The rendering process starts as soon as the page loads and the result rendering is shown in the upper right corner of the page when it is finished. You can look at the developer console to see how long does the rendering process take.
+
+- [Kittens](http://dom-panda.node.jankuca.com/example/kittens.html)
+- [Last.fm Page](http://dom-panda.node.jankuca.com/example/lastfm.html)
+
 ## Installation ##
 
     git clone git://github.com/jankuca/dom-panda.git
