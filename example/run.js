@@ -1,4 +1,5 @@
 window.addEventListener('load', function () {
+	console.log('RENDERING STARTED');
 
 	window.renderer = new panda.Renderer();
 	var walker = new panda.Walker();
