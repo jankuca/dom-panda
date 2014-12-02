@@ -1,0 +1,12 @@
+{
+  "name": "dom-panda",
+  "version": "0.1.1",
+  "main": "server.js",
+  "author": "Jan Kuča <jan@jankuca.com> (http://jankuca.com)",
+  "dependencies": {
+    "minimist": "1.1.x"
+  },
+  "scripts": {
+    "start": "node server -p 1100"
+  }
+}

@@ -2,11 +2,11 @@ var FS = require('fs');
 var HTTP = require('http');
 var HTTPS = require('https');
 var URL = require('url');
+var minimist = require('minimist');
 
 /** @type {Object} */
-var input = require('./lib/process-input/process-input');
-
-if (!input.params.p) {
+var input = minimist(process.argv.slice(2));
+if (!input['p']) {
 	throw new Error('No port specified. Use the -p XXXX or --p=XXXX argument.');
 }
 
@@ -48,6 +48,7 @@ function staticfile(url, res) {
 	FS.readFile('.' + url.pathname, 'binary', function (err, data) {
 		if (err) {
 			res.writeHead(404);
+			res.write('404 Not found');
 		} else {
 			res.writeHead(200);
 			res.write(data, 'binary');
@@ -71,5 +72,5 @@ var server = HTTP.createServer(function (req, res) {
 	}
 });
 
-server.listen(input.params.p);
-console.log('Server started on port ' + input.params.p);
+server.listen(input['p']);
+console.log('Server started on port ' + input['p']);
