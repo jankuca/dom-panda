@@ -13,10 +13,11 @@ These are two demo pages. The rendering process starts as soon as the page loads
 
     git clone git://github.com/jankuca/dom-panda.git
     cd dom-panda
-    git submodule update --init
-    node server.js -p 1100
+    npm install
 
 ## Run ##
+
+    npm start
 
     http://localhost:1100/example/kittens.html
     http://localhost:1100/example/lastfm.html
